@@ -23,12 +23,12 @@ public class StandardUser extends MainTest {
 
             page.navigate("https://www.saucedemo.com/inventory.html");
             Locator buttonAddtocart1 = page.locator("//*[@id=\"add-to-cart-sauce-labs-backpack\"]");
-            Locator korpa = page.locator("//*[@id=\"shopping_cart_container\"]/a");
+            Locator cart = page.locator("//*[@id=\"shopping_cart_container\"]/a");
             Locator removeButton = page.locator("//*[@id=\"remove-sauce-labs-backpack\"]");
             Locator conToShop = page.locator("//*[@id=\"continue-shopping\"]");
             assertThat(buttonAddtocart1).isVisible();
             buttonAddtocart1.click();
-            korpa.click();
+            cart.click();
             assertThat(page).hasURL("https://www.saucedemo.com/cart.html");
             removeButton.click();
             conToShop.click();
