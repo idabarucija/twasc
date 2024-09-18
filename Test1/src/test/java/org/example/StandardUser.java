@@ -7,7 +7,7 @@ public class StandardUser extends MainTest {
 
     @BeforeEach
 
-    void beforeA () {
+    void login () {
         page.navigate("https://www.saucedemo.com/");
         Locator username = page.locator("//input[@data-test='username']");
         Locator password = page.locator("//input[@data-test='password']");
