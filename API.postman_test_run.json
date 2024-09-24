@@ -1,0 +1,83 @@
+{
+	"id": "bd08a276-1224-4ac9-a21d-ae7dda861359",
+	"name": "API",
+	"timestamp": "2024-09-24T12:42:32.087Z",
+	"collection_id": "33066618-34500c5f-adaa-4a00-85af-05d370610982",
+	"folder_id": 0,
+	"environment_id": "33066618-aca81b9e-6cf2-4721-ba48-070877ca6eea",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-09-24T12:42:31.089Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "df111e0c-4e77-4fb2-89be-10bbc66fc925",
+			"name": "New Request",
+			"url": "https://randomuser.me/api/",
+			"time": 275,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"All users have email": true,
+				"All users have neseccasry data": true,
+				"Status code is 200": true,
+				"Response contains a user": true,
+				"Only one user is returned": true,
+				"User has a valid name": true
+			},
+			"testPassFailCounts": {
+				"All users have email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"All users have neseccasry data": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains a user": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Only one user is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User has a valid name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				275
+			],
+			"allTests": [
+				{
+					"All users have email": true,
+					"All users have neseccasry data": true,
+					"Status code is 200": true,
+					"Response contains a user": true,
+					"Only one user is returned": true,
+					"User has a valid name": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 275,
+	"collection": {
+		"requests": [
+			{
+				"id": "df111e0c-4e77-4fb2-89be-10bbc66fc925",
+				"method": "GET"
+			}
+		]
+	}
+}
